@@ -19,14 +19,14 @@ const MusicPlayer = () => {
   const [loop, setLoop] = useState(false);
 
   const playClickSound = () => {
-    const audio = new Audio("src/assets/ui-click-97915.mp3"); // Path to your click sound file
+    const audio = new Audio("/assets/ui-click-97915.mp3"); // Path to your click sound file
     audio.volume = 1;
     audio.play();
   };
 
   const playClickSound2 = () => {
     const audio = new Audio(
-      "src/assets/click-buttons-ui-menu-sounds-effects-button-13-205396.mp3"
+      "/assets/click-buttons-ui-menu-sounds-effects-button-13-205396.mp3"
     ); // Path to your click sound file
     audio.volume = 0.5;
     audio.play();
@@ -35,73 +35,61 @@ const MusicPlayer = () => {
   const Tracks = [
     {
       title: "Snowfall-Oneheart",
-      source: "src/assets/y2mate.com - snowfall.mp3",
-      image:
-        "https://lh3.googleusercontent.com/2IYboQLztE7gb4-j8qNYM5H65M9X_u2vHuebHvXpWTw0ikELEnkrUZVjwa7HOYq8_CE-7MA8c-rd6CyZ=w544-h544-l90-rj",
+      source: "/assets/y2mate.com - snowfall.mp3",
+      image: "https://lh3.googleusercontent.com/2IYboQLztE7gb4-j8qNYM5H65M9X_u2vHuebHvXpWTw0ikELEnkrUZVjwa7HOYq8_CE-7MA8c-rd6CyZ=w544-h544-l90-rj",
     },
     {
       title: "Nostalgia-Oneheart",
-      source: "src/assets/y2mate.com - nostalgia.mp3",
-      image:
-        "https://lh3.googleusercontent.com/FDKG95YfuqO-S97dX0kXFYbfeXo11mOctK5qlkHHKuwCCXIgFKycq7W63hfBGDkKarcksLQsgwVysNSm=w544-h544-l90-rj",
+      source: "/assets/y2mate.com - nostalgia.mp3",
+      image: "https://lh3.googleusercontent.com/FDKG95YfuqO-S97dX0kXFYbfeXo11mOctK5qlkHHKuwCCXIgFKycq7W63hfBGDkKarcksLQsgwVysNSm=w544-h544-l90-rj",
     },
     {
       title: "Say Something-Oneheart",
-      source: "src/assets/y2mate.com - say something.mp3",
-      image:
-        "https://lh3.googleusercontent.com/qa26Od9M5GR4lXqlzQKv8Hlguwat1kkNAyX4fSYze7aZeZV8pViJIF9__roDNNLxGoMd77fc2cqmR_0=w544-h544-l90-rj",
+      source: "/assets/y2mate.com - say something.mp3",
+      image: "https://lh3.googleusercontent.com/qa26Od9M5GR4lXqlzQKv8Hlguwat1kkNAyX4fSYze7aZeZV8pViJIF9__roDNNLxGoMd77fc2cqmR_0=w544-h544-l90-rj",
     },
     {
       title: "Fairytale-Oneheart",
-      source: "src/assets/y2mate.com - fairytale.mp3",
-      image:
-        "https://lh3.googleusercontent.com/Eiczg4egnTzIiYcTsiVoGmkS_fFb1Rv4-vu_KeRD4UdYcBN_FhNj4t_19aS7f5buesyQkSS-UGIAdTB5Rg=w544-h544-l90-rj",
+      source: "/assets/y2mate.com - fairytale.mp3",
+      image: "https://lh3.googleusercontent.com/Eiczg4egnTzIiYcTsiVoGmkS_fFb1Rv4-vu_KeRD4UdYcBN_FhNj4t_19aS7f5buesyQkSS-UGIAdTB5Rg=w544-h544-l90-rj",
     },
     {
       title: "Best Mtv & Coke Studio unplugged songs",
-      source:
-        "src/assets/y2mate.com - Best Mtv  Coke Studio unplugged songs 1.mp3",
-      image:
-        "https://i.pinimg.com/564x/30/72/5b/30725b7bb75afde26ba952ab73f02ae2.jpg",
+      source: "/assets/y2mate.com - Best Mtv  Coke Studio unplugged songs 1.mp3",
+      image: "https://i.pinimg.com/564x/30/72/5b/30725b7bb75afde26ba952ab73f02ae2.jpg",
     },
     {
       title: "Boba Raat - Nabarun",
-      source: "src/assets/Boba Raat (Cover) _ Nabarun @rupaktiary.mp3",
-      image:
-        "https://i.pinimg.com/originals/88/f5/ad/88f5ad264e1f7e7641d07e8f577b3b15.jpg",
+      source: "/assets/Boba Raat (Cover) _ Nabarun @rupaktiary.mp3",
+      image: "https://i.pinimg.com/originals/88/f5/ad/88f5ad264e1f7e7641d07e8f577b3b15.jpg",
     },
     {
       title: "LoFi Beat Mix - Misery",
-      source:
-        "src/assets/ＳＡＤＷＡＶＥ ~ [FREE] SAD CHILL LOFI TYPE BEAT ( LO-FI RAP BEAT 2024).mp3",
-      image:
-        "https://i.pinimg.com/1200x/33/99/54/3399541de6d0545151e9bf2f6571aef1.jpg",
+      source: "/assets/ＳＡＤＷＡＶＥ ~ [FREE] SAD CHILL LOFI TYPE BEAT ( LO-FI RAP BEAT 2024).mp3",
+      image: "https://i.pinimg.com/1200x/33/99/54/3399541de6d0545151e9bf2f6571aef1.jpg",
     },
     {
       title: "Jacob and the stone",
-      source: "src/assets/y2meta.com - Jacob and the Stone (128 kbps).mp3",
-      image:
-        "https://lh3.googleusercontent.com/dZeO3G4a4ZrSFwM6nbY044WumfD1Ah3eSRdxMjS1yq6gCzVIlSwkp4giCtIwqMZHNrgt7nFJoVnFLys=w544-h544-l90-rj",
+      source: "/assets/y2meta.com - Jacob and the Stone (128 kbps).mp3",
+      image: "https://lh3.googleusercontent.com/dZeO3G4a4ZrSFwM6nbY044WumfD1Ah3eSRdxMjS1yq6gCzVIlSwkp4giCtIwqMZHNrgt7nFJoVnFLys=w544-h544-l90-rj",
     },
     {
       title: "Idea 22 - Gibran Alcocer",
-      source: "src/assets/Idea 22.mp3",
-      image:
-        "https://lh3.googleusercontent.com/ZaG7LySj-ooWQU9yxuQAUh9OGgDL7faIi0RnmRWQU4uW2liG7Yf_D-vRlEboyoYSwqi02yQDwaBo1RMs=w544-h544-l90-rj",
+      source: "/assets/Idea 22.mp3",
+      image: "https://lh3.googleusercontent.com/ZaG7LySj-ooWQU9yxuQAUh9OGgDL7faIi0RnmRWQU4uW2liG7Yf_D-vRlEboyoYSwqi02yQDwaBo1RMs=w544-h544-l90-rj",
     },
     {
       title: "Interstellar - Jerrik Dizlop",
-      source: "src/assets/Interstellar.mp3",
-      image:
-        "https://lh3.googleusercontent.com/cz-v5I1AlQ3DWo2vjSbJg7u-5vn3yXPq_xnCaTyOMLCxNhvJT1FPTl81C5g23pdlLT7u6aXuT5lBtkpc=w544-h544-l90-rj",
+      source: "/assets/Interstellar.mp3",
+      image: "https://lh3.googleusercontent.com/cz-v5I1AlQ3DWo2vjSbJg7u-5vn3yXPq_xnCaTyOMLCxNhvJT1FPTl81C5g23pdlLT7u6aXuT5lBtkpc=w544-h544-l90-rj",
     },
     {
       title: "Experience - Ludovico Einaudi",
-      source: "src/assets/Experience (Ludovico Einaudi).mp3",
-      image:
-        "https://lh3.googleusercontent.com/BDn3Gx-gohcfCZ-QsTOkIq8Kt0jRfV_l9TbT4rqR5T_-wc1HKBozDE9FzdMHXdus218F606H3pBgqVpWJA=w544-h544-l90-rj",
+      source: "/assets/Experience (Ludovico Einaudi).mp3",
+      image: "https://lh3.googleusercontent.com/BDn3Gx-gohcfCZ-QsTOkIq8Kt0jRfV_l9TbT4rqR5T_-wc1HKBozDE9FzdMHXdus218F606H3pBgqVpWJA=w544-h544-l90-rj",
     },
   ];
+  
 
   const volumeSteps = [0, 0.2, 0.4, 0.6, 0.8, 1];
 

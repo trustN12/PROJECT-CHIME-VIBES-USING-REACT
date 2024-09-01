@@ -15,7 +15,7 @@ const ChangeBG = () => {
 
   const playbackSound = () => {
     const audio = new Audio(
-      "src/assets/mouse-click-117076.mp3"
+      "/assets/mouse-click-117076.mp3"
     ); // Path to your click sound file
     audio.volume = 0.8;
     audio.play();

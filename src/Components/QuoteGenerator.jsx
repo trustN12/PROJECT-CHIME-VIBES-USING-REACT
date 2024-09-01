@@ -27,7 +27,7 @@ const QuoteGenerator = () => {
   };
 
   const audioEffect = () => {
-    const audio = new Audio("src/assets/Select Button Sound Effect.mp3");
+    const audio = new Audio("/assets/Select Button Sound Effect.mp3");
     audio.play();
   };
 
