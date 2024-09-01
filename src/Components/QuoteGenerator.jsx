@@ -9,30 +9,28 @@ const QuoteGenerator = () => {
   async function fetchQuote() {
     try {
       setLoading(true);
-      setError(null); // Reset error state
+      setError(null);
       const response = await fetch("https://api.quotable.io/random", {
         method: "GET",
       });
-
+  
       if (!response.ok) {
         throw new Error(`API Error: ${response.status} ${response.statusText}`);
       }
-
+  
       const result = await response.json();
-      console.log("Fetched Quote:", result); // Log the result to check if it's fetched properly
-      setQuote(result); // Set the fetched quote
+      console.log("Fetched Quote:", result);
+      setQuote(result);
       audioEffect();
     } catch (error) {
       console.error("Error fetching the quote:", error);
-      // setError("Failed to fetch quote. Please try again."); // Set error message
-      setQuote({
-        content: "Failed to fetch quote. Please try again.",
-        author: "",
-      }); // Set error message
+      setError(`Failed to fetch quote: ${error.message}`); // Display detailed error message
+      setQuote(null); // Reset the quote state in case of error
     } finally {
       setLoading(false);
     }
   }
+  
 
   const glowGEN = {
     boxShadow: "0 0 30px rgba(120, 200, 200, 0.7)",
