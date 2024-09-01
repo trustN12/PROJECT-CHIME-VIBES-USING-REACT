@@ -48,7 +48,7 @@ const ChangeBG = () => {
     <div className="relative">
       {message && (
         <div
-          className="fixed top-14 right-5 bg-slate-200 text-slate-950 text-sm p-2 px-4 rounded shadow-lg bg-opacity-80 border-ra "
+          className=" fixed top-3 right-3  bg-slate-200 text-slate-950 text-sm p-3 px-4 rounded shadow-lg bg-opacity-80 border-rose-500 z-50 "
           style={glowStyle}
         >
           {message}
@@ -57,7 +57,7 @@ const ChangeBG = () => {
       <button onClick={changeVideo}>
         <span>
           {
-            <FaPalette className="fixed top-4 right-2 w-7 h-7 flex items-center justify-center shadow-2xl text-white hover:text-pink-300 transition-colors glow " />
+            <FaPalette className="fixed top-3 right-5 w-10 h-10 flex items-center justify-center shadow-2xl text-white hover:text-pink-300 transition-colors glow " />
           }
         </span>
       </button>

@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       {showSoundPlayer && <SoundPlayer />}
-      <h1 className={`flex justify-center text-7xl mb-3 ${darkMode ? "" : "text-white"}`}>
+      <h1 className={`flex justify-center text-6xl mb-3 ${darkMode ? "" : "text-white"}`}>
         Chime
         <div className="div">
         <span className="text-emerald-400">Vibes</span>
