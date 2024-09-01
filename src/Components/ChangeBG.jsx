@@ -14,12 +14,10 @@ const ChangeBG = () => {
   };
 
   const playbackSound = () => {
-    const audio = new Audio(
-      "/assets/mouse-click-117076.mp3"
-    ); // Path to your click sound file
+    const audio = new Audio("/assets/mouse-click-117076.mp3"); // Path to your click sound file
     audio.volume = 0.8;
     audio.play();
-  }
+  };
 
   const changeVideo = () => {
     // Generate a unique query string to force reload
@@ -57,7 +55,7 @@ const ChangeBG = () => {
       <button onClick={changeVideo}>
         <span>
           {
-            <FaPalette className="fixed top-3 right-5 w-10 h-10 flex items-center justify-center shadow-2xl text-white hover:text-pink-300 transition-colors glow " />
+            <FaPalette className="fixed top-1 right-3 w-7 h-7 flex items-center justify-center shadow-2xl text-white hover:text-pink-300 transition-colors glow " />
           }
         </span>
       </button>

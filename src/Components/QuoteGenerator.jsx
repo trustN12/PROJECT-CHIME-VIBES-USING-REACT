@@ -4,44 +4,60 @@ import { FaBolt } from "react-icons/fa";
 const QuoteGenerator = () => {
   const [loading, setLoading] = useState(false);
   const [quote, setQuote] = useState(null);
+  const [error, setError] = useState(null); // New state for errors
 
   async function fetchQuote() {
     try {
       setLoading(true);
+      setError(null); // Reset error state
       const response = await fetch("https://api.quotable.io/random", {
         method: "GET",
       });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status} ${response.statusText}`);
+      }
+
       const result = await response.json();
-      console.log(result); // Log the result to check if it's fetched properly
+      console.log("Fetched Quote:", result); // Log the result to check if it's fetched properly
       setQuote(result); // Set the fetched quote
       audioEffect();
     } catch (error) {
       console.error("Error fetching the quote:", error);
+      // setError("Failed to fetch quote. Please try again."); // Set error message
+      setQuote({
+        content: "Failed to fetch quote. Please try again.",
+        author: "",
+      }); // Set error message
     } finally {
       setLoading(false);
     }
   }
 
   const glowGEN = {
-    boxShadow: "0 0 30px rgba(120, 200, 200, 0.8)",
+    boxShadow: "0 0 30px rgba(120, 200, 200, 0.7)",
   };
 
   const audioEffect = () => {
-    const audio = new Audio("/assets/Select Button Sound Effect.mp3");
-    audio.play();
+    try {
+      const audio = new Audio("/assets/Select Button Sound Effect.mp3");
+      audio.volume = 1;
+      audio.play().catch((err) => {
+        console.error("Audio playback failed:", err);
+      });
+    } catch (err) {
+      console.error("Error initializing audio effect:", err);
+    }
   };
-
-  // const audioEffectForGenerate = () => {
-  //   const audio = new Audio("src/assets/app button click sound.mp3");
-  //   audio.play();
-  // };
 
   return (
     <div className="m-12 p-2 bg-slate-950 bg-opacity-70 rounded-2xl ">
       <h1 className="text-pink-200 font-bold text-2xl underline">Quote</h1>
 
       <div className="p-2 text-white">
-        {quote ? (
+        {error ? (
+          <p className="text-red-500">{error}</p>
+        ) : quote ? (
           <>
             <p className="">{quote.content}</p>
             <div className="pt-4 text-sm">
@@ -60,10 +76,12 @@ const QuoteGenerator = () => {
       >
         <button
           disabled={loading}
+          aria-label="Generate new quote"
+          className="flex items-center gap-2 focus:outline-none"
         >
           {loading ? "Loading.." : "Generate"}
+          <FaBolt className="text-pink-100" />
         </button>
-        <FaBolt className="text-pink-100" />
       </div>
     </div>
   );

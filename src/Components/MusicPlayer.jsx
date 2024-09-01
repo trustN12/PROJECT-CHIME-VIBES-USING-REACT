@@ -36,60 +36,72 @@ const MusicPlayer = () => {
     {
       title: "Snowfall-Oneheart",
       source: "/assets/y2mate.com - snowfall.mp3",
-      image: "https://lh3.googleusercontent.com/2IYboQLztE7gb4-j8qNYM5H65M9X_u2vHuebHvXpWTw0ikELEnkrUZVjwa7HOYq8_CE-7MA8c-rd6CyZ=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/2IYboQLztE7gb4-j8qNYM5H65M9X_u2vHuebHvXpWTw0ikELEnkrUZVjwa7HOYq8_CE-7MA8c-rd6CyZ=w544-h544-l90-rj",
     },
     {
       title: "Nostalgia-Oneheart",
       source: "/assets/y2mate.com - nostalgia.mp3",
-      image: "https://lh3.googleusercontent.com/FDKG95YfuqO-S97dX0kXFYbfeXo11mOctK5qlkHHKuwCCXIgFKycq7W63hfBGDkKarcksLQsgwVysNSm=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/FDKG95YfuqO-S97dX0kXFYbfeXo11mOctK5qlkHHKuwCCXIgFKycq7W63hfBGDkKarcksLQsgwVysNSm=w544-h544-l90-rj",
     },
     {
       title: "Say Something-Oneheart",
       source: "/assets/y2mate.com - say something.mp3",
-      image: "https://lh3.googleusercontent.com/qa26Od9M5GR4lXqlzQKv8Hlguwat1kkNAyX4fSYze7aZeZV8pViJIF9__roDNNLxGoMd77fc2cqmR_0=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/qa26Od9M5GR4lXqlzQKv8Hlguwat1kkNAyX4fSYze7aZeZV8pViJIF9__roDNNLxGoMd77fc2cqmR_0=w544-h544-l90-rj",
     },
     {
       title: "Fairytale-Oneheart",
       source: "/assets/y2mate.com - fairytale.mp3",
-      image: "https://lh3.googleusercontent.com/Eiczg4egnTzIiYcTsiVoGmkS_fFb1Rv4-vu_KeRD4UdYcBN_FhNj4t_19aS7f5buesyQkSS-UGIAdTB5Rg=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/Eiczg4egnTzIiYcTsiVoGmkS_fFb1Rv4-vu_KeRD4UdYcBN_FhNj4t_19aS7f5buesyQkSS-UGIAdTB5Rg=w544-h544-l90-rj",
     },
     {
       title: "Best Mtv & Coke Studio unplugged songs",
-      source: "/assets/y2mate.com - Best Mtv  Coke Studio unplugged songs 1.mp3",
-      image: "https://i.pinimg.com/564x/30/72/5b/30725b7bb75afde26ba952ab73f02ae2.jpg",
+      source:
+        "/assets/y2mate.com - Best Mtv  Coke Studio unplugged songs 1.mp3",
+      image:
+        "https://i.pinimg.com/564x/30/72/5b/30725b7bb75afde26ba952ab73f02ae2.jpg",
     },
     {
       title: "Boba Raat - Nabarun",
       source: "/assets/Boba Raat (Cover) _ Nabarun @rupaktiary.mp3",
-      image: "https://i.pinimg.com/originals/88/f5/ad/88f5ad264e1f7e7641d07e8f577b3b15.jpg",
+      image:
+        "https://i.pinimg.com/originals/88/f5/ad/88f5ad264e1f7e7641d07e8f577b3b15.jpg",
     },
     {
       title: "LoFi Beat Mix - Misery",
-      source: "/assets/ＳＡＤＷＡＶＥ ~ [FREE] SAD CHILL LOFI TYPE BEAT ( LO-FI RAP BEAT 2024).mp3",
-      image: "https://i.pinimg.com/1200x/33/99/54/3399541de6d0545151e9bf2f6571aef1.jpg",
+      source:
+        "/assets/ＳＡＤＷＡＶＥ ~ [FREE] SAD CHILL LOFI TYPE BEAT ( LO-FI RAP BEAT 2024).mp3",
+      image:
+        "https://i.pinimg.com/1200x/33/99/54/3399541de6d0545151e9bf2f6571aef1.jpg",
     },
     {
       title: "Jacob and the stone",
       source: "/assets/y2meta.com - Jacob and the Stone (128 kbps).mp3",
-      image: "https://lh3.googleusercontent.com/dZeO3G4a4ZrSFwM6nbY044WumfD1Ah3eSRdxMjS1yq6gCzVIlSwkp4giCtIwqMZHNrgt7nFJoVnFLys=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/dZeO3G4a4ZrSFwM6nbY044WumfD1Ah3eSRdxMjS1yq6gCzVIlSwkp4giCtIwqMZHNrgt7nFJoVnFLys=w544-h544-l90-rj",
     },
     {
       title: "Idea 22 - Gibran Alcocer",
       source: "/assets/Idea 22.mp3",
-      image: "https://lh3.googleusercontent.com/ZaG7LySj-ooWQU9yxuQAUh9OGgDL7faIi0RnmRWQU4uW2liG7Yf_D-vRlEboyoYSwqi02yQDwaBo1RMs=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/ZaG7LySj-ooWQU9yxuQAUh9OGgDL7faIi0RnmRWQU4uW2liG7Yf_D-vRlEboyoYSwqi02yQDwaBo1RMs=w544-h544-l90-rj",
     },
     {
       title: "Interstellar - Jerrik Dizlop",
       source: "/assets/Interstellar.mp3",
-      image: "https://lh3.googleusercontent.com/cz-v5I1AlQ3DWo2vjSbJg7u-5vn3yXPq_xnCaTyOMLCxNhvJT1FPTl81C5g23pdlLT7u6aXuT5lBtkpc=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/cz-v5I1AlQ3DWo2vjSbJg7u-5vn3yXPq_xnCaTyOMLCxNhvJT1FPTl81C5g23pdlLT7u6aXuT5lBtkpc=w544-h544-l90-rj",
     },
     {
       title: "Experience - Ludovico Einaudi",
       source: "/assets/Experience (Ludovico Einaudi).mp3",
-      image: "https://lh3.googleusercontent.com/BDn3Gx-gohcfCZ-QsTOkIq8Kt0jRfV_l9TbT4rqR5T_-wc1HKBozDE9FzdMHXdus218F606H3pBgqVpWJA=w544-h544-l90-rj",
+      image:
+        "https://lh3.googleusercontent.com/BDn3Gx-gohcfCZ-QsTOkIq8Kt0jRfV_l9TbT4rqR5T_-wc1HKBozDE9FzdMHXdus218F606H3pBgqVpWJA=w544-h544-l90-rj",
     },
   ];
-  
 
   const volumeSteps = [0, 0.2, 0.4, 0.6, 0.8, 1];
 
@@ -249,16 +261,16 @@ const MusicPlayer = () => {
             <FaVolumeMute
               className={`text-lg cursor-pointer ${
                 muted ? "text-red-500" : "text-white"
-              } hover:text-blue-400`}
+              } `}
               onClick={handleMute}
             />
 
             <div className="flex flex-row items-center">
-              {volumeSteps.map((step) => (
+              {volumeSteps.map((step, index) => (
                 <button
                   key={step}
                   className={`w-3 h-1 ${
-                    volume > step
+                    volume >= step
                       ? "bg-blue-500"
                       : volume === 0
                       ? "bg-gray-500"
@@ -274,11 +286,11 @@ const MusicPlayer = () => {
             {!muted && (
               <>
                 <FaMinus
-                  className="text-lg text-white cursor-pointer hover:text-blue-400"
+                  className="text-lg text-white cursor-pointer hover:text-pink-200"
                   onClick={handleVolumeDown}
                 />
                 <FaPlus
-                  className="text-lg text-white cursor-pointer hover:text-blue-400"
+                  className="text-lg text-white cursor-pointer hover:text-pink-200"
                   onClick={handleVolumeUp}
                 />
               </>
@@ -287,7 +299,7 @@ const MusicPlayer = () => {
             <FaRedo
               className={`text-lg cursor-pointer ${
                 loop ? "text-green-500" : "text-white"
-              } hover:text-blue-400`}
+              }`}
               onClick={handleLoopToggle}
             />
           </div>

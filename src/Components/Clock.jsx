@@ -27,7 +27,7 @@ const Clock = ({ darkMode, setDarkMode }) => {
     const audio = new Audio(
       "/assets/zapsplat_multimedia_beep_high_tech_cyber_button_87509.mp3"
     ); // Path to your click sound file
-    audio.volume = 0.30;
+    audio.volume = 0.3;
     audio.play();
   };
 
